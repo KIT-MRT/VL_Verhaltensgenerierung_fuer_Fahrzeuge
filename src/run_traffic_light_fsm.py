@@ -1,0 +1,9 @@
+from traffic_light_fsm import TrafficLightFSM
+
+tl = TrafficLightFSM()
+tl.transition(TrafficLightFSM.light_change_timer_elapsed_event)
+tl.transition(TrafficLightFSM.button_pressed_event)
+tl.transition(TrafficLightFSM.light_change_timer_elapsed_event)
+tl.transition(TrafficLightFSM.button_pressed_event)
+tl.transition(TrafficLightFSM.pedestrian_green_timer_elapsed_event)
+tl.transition(TrafficLightFSM.light_change_timer_elapsed_event)
